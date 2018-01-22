@@ -1,5 +1,6 @@
 <%= form_for [@task_list, @task], html: { class: "task-form" } do |f| %>
 
+
   <h2>Add a Task</h2>
 
   <% if f.object.errors.any? %>
@@ -8,7 +9,7 @@
 
   <div class="form-row">
     <%= f.label :description, class: "form-label" %>
-    <%= f.text_field :description %>
+    <%= f.text_field :description%>
   </div>
 
   <div class="form-row">
